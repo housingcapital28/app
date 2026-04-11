@@ -42,12 +42,15 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center bg-black px-3 py-2 rounded-lg">
-            <img
-              src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/puln9hgq_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
-              alt="Housing Capital Logo"
-              className="h-16 md:h-20 w-auto object-contain"
-            />
+          <div className="flex items-center space-x-2">
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-slate-900 tracking-tight">
+                Housing Capital
+              </span>
+              <span className="text-xs text-amber-600 font-medium tracking-wide">
+                CONSTRUCTION & REAL ESTATE
+              </span>
+            </div>
           </div>
 
           {/* Desktop Menu */}

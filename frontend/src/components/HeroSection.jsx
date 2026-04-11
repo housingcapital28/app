@@ -58,17 +58,6 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-4xl">
-          {/* Logo on Hero */}
-          <div className="mb-8">
-            <div className="bg-black inline-block px-8 py-6 rounded-2xl shadow-2xl">
-              <img
-                src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/puln9hgq_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
-                alt="Housing Capital Logo"
-                className="h-32 md:h-40 lg:h-48 w-auto object-contain"
-              />
-            </div>
-          </div>
-
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Buy. Sell. Invest.
