@@ -29,6 +29,21 @@ properties_seed = [
         "description": "Beautiful 3BHK builder floor in Sushant Lok C Block with excellent location",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-malibu",
+        "title": "Corner Property - Malibu Town",
+        "price": "Price on Request",
+        "location": "Malibu Town, Sector 48, Gurugram",
+        "sector": "Sector 48",
+        "size": "500 sq yds",
+        "type": "Plot",
+        "bedrooms": None,
+        "bathrooms": None,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/xzokp3f5_WhatsApp%20Image%202026-04-11%20at%205.55.19%20PM.jpeg",
+        "description": "Prime corner property in Malibu Town with excellent construction potential",
+        "status": "available",
+        "featured": True
     }
 ]
 
