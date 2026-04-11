@@ -25,7 +25,7 @@ properties_seed = [
         "type": "Builder Floor",
         "bedrooms": 3,
         "bathrooms": 3,
-        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/p5glwuxm_IMG_7953.HEIC",
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/5ja2obca_IMG_7953.jpg",
         "description": "Beautiful 3BHK builder floor in Sushant Lok C Block with excellent location",
         "status": "available",
         "featured": True
