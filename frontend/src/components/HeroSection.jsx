@@ -46,7 +46,7 @@ export const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20"
       style={{
-        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/5ja2obca_IMG_7953.jpg)',
+        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/cm6ncrnk_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2004_31_11%20PM.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
