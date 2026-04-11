@@ -59,6 +59,21 @@ properties_seed = [
         "description": "Spacious 4BHK builder floor in Sushant Lok C2 Block with modern amenities",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-sec23",
+        "title": "Modern 4BHK Builder Floor",
+        "price": "Price on Request",
+        "location": "Sector 23, Gurugram",
+        "sector": "Sector 23",
+        "size": "342 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/7fq6rh6i_WhatsApp%20Image%202026-04-11%20at%206.05.32%20PM.jpeg",
+        "description": "Contemporary 4BHK builder floor in prime Sector 23 location",
+        "status": "available",
+        "featured": True
     }
 ]
 
