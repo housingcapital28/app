@@ -74,6 +74,21 @@ properties_seed = [
         "description": "Contemporary 4BHK builder floor in prime Sector 23 location",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-sec23-2",
+        "title": "Premium 4BHK Builder Floor",
+        "price": "Price on Request",
+        "location": "Sector 23, Gurugram",
+        "sector": "Sector 23",
+        "size": "300 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/kejl3gva_WhatsApp%20Image%202026-04-11%20at%206.04.42%20PM.jpeg",
+        "description": "Elegant 4BHK builder floor with modern design in Sector 23",
+        "status": "available",
+        "featured": True
     }
 ]
 
