@@ -39,6 +39,12 @@ Create a modern, premium real estate website for Housing Capital, a Gurugram-bas
 
 **Date**: December 2024
 
+**Latest Update**: Logo Integration
+- Added official Housing Capital logo (bull with building elements, EST - 2020)
+- Logo displayed in navbar (h-20/h-24, responsive sizing)
+- Logo displayed in footer (inverted white version, h-32)
+- Professional brand identity throughout the site
+
 #### Components Created:
 1. **Navbar Component** (`/app/frontend/src/components/Navbar.jsx`)
    - Sticky navigation with smooth scroll

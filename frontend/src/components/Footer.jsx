@@ -13,8 +13,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Housing Capital</h3>
-            <p className="text-sm text-amber-500 mb-4">Construction & Real Estate</p>
+            <img
+              src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/njhhudzn_WhatsApp%20Image%202026-04-11%20at%203.05.47%20PM.jpeg"
+              alt="Housing Capital Logo"
+              className="h-32 w-auto object-contain mb-6"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
             <p className="text-slate-400 leading-relaxed mb-6">
               Your trusted partner for premium builder floors, apartments, plots, and investment properties in Gurugram.
             </p>
