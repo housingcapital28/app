@@ -44,6 +44,21 @@ properties_seed = [
         "description": "Prime corner 4BHK builder floor in Malibu Town with excellent construction",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-sushant-c2",
+        "title": "Luxury 4BHK Builder Floor",
+        "price": "Price on Request",
+        "location": "Sushant Lok C2 Block, Sector 43, Gurugram",
+        "sector": "Sector 43",
+        "size": "458 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/3gjhkxd0_WhatsApp%20Image%202026-04-11%20at%205.57.37%20PM.jpeg",
+        "description": "Spacious 4BHK builder floor in Sushant Lok C2 Block with modern amenities",
+        "status": "available",
+        "featured": True
     }
 ]
 
