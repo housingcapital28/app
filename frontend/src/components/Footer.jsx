@@ -152,7 +152,7 @@ export const Footer = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/qmee7kc2_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
               alt="Housing Capital Logo"
-              className="h-40 md:h-48 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+              className="h-56 md:h-64 lg:h-72 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
         </div>

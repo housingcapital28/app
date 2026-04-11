@@ -46,7 +46,7 @@ export const Navbar = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/qmee7kc2_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
               alt="Housing Capital Logo"
-              className="h-24 md:h-28 w-auto object-contain"
+              className="h-32 md:h-40 lg:h-44 w-auto object-contain"
             />
           </div>
 
