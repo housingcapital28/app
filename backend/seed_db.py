@@ -16,6 +16,21 @@ db = client[os.environ['DB_NAME']]
 # Seed data based on mock.js
 properties_seed = [
     {
+        "id": "prop-sushant",
+        "title": "Premium 3BHK Builder Floor",
+        "price": "Price on Request",
+        "location": "Sushant Lok C Block, Sector 43, Gurugram",
+        "sector": "Sector 43",
+        "size": "215 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/p5glwuxm_IMG_7953.HEIC",
+        "description": "Beautiful 3BHK builder floor in Sushant Lok C Block with excellent location",
+        "status": "available",
+        "featured": True
+    },
+    {
         "id": "prop-1",
         "title": "Luxury 4BHK Builder Floor",
         "price": "₹2.5 Cr",
