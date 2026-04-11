@@ -9,18 +9,36 @@ import {
   SelectValue,
 } from './ui/select';
 import { gurugramSectors, propertyTypes, budgetRanges } from '../data/mock';
+import { searchProperties } from '../api/api';
 
 export const HeroSection = () => {
   const [searchParams, setSearchParams] = useState({
     location: '',
-    propertyType: '',
+    property_type: '',
     budget: ''
   });
+  const [searching, setSearching] = useState(false);
 
-  const handleSearch = () => {
-    console.log('Search params:', searchParams);
-    // In real implementation, this would filter properties
-    alert(`Searching for ${searchParams.propertyType || 'properties'} in ${searchParams.location || 'Gurugram'}`);
+  const handleSearch = async () => {
+    try {
+      setSearching(true);
+      console.log('Search params:', searchParams);
+      
+      const results = await searchProperties(searchParams);
+      console.log('Search results:', results);
+      
+      // Show results in alert for MVP
+      if (results.length > 0) {
+        alert(`Found ${results.length} properties matching your search!`);
+      } else {
+        alert('No properties found matching your criteria. Please try different filters.');
+      }
+    } catch (err) {
+      console.error('Search error:', err);
+      alert('Search failed. Please try again.');
+    } finally {
+      setSearching(false);
+    }
   };
 
   return (
@@ -79,7 +97,7 @@ export const HeroSection = () => {
                 <label className="block text-sm font-semibold text-slate-700 mb-2">
                   Property Type
                 </label>
-                <Select onValueChange={(value) => setSearchParams({ ...searchParams, propertyType: value })}>
+                <Select onValueChange={(value) => setSearchParams({ ...searchParams, property_type: value })}>
                   <SelectTrigger className="w-full h-12 border-slate-300">
                     <SelectValue placeholder="Select Type" />
                   </SelectTrigger>
@@ -116,10 +134,11 @@ export const HeroSection = () => {
             {/* Search Button */}
             <Button
               onClick={handleSearch}
-              className="w-full h-14 bg-amber-600 hover:bg-amber-700 text-white text-lg font-semibold"
+              disabled={searching}
+              className="w-full h-14 bg-amber-600 hover:bg-amber-700 text-white text-lg font-semibold disabled:opacity-50"
             >
               <Search className="w-5 h-5 mr-2" />
-              Search Properties
+              {searching ? 'Searching...' : 'Search Properties'}
             </Button>
           </div>
 

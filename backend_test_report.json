@@ -1,0 +1,86 @@
+{
+  "total_tests": 13,
+  "passed_tests": 13,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "test_results": [
+    {
+      "test": "API Health Check",
+      "status": "PASS",
+      "details": "Status: 200, Response: dict - Housing Capital API - Ready",
+      "timestamp": "2026-04-11T09:48:54.130057"
+    },
+    {
+      "test": "Get All Properties",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 9 items",
+      "timestamp": "2026-04-11T09:48:54.263797"
+    },
+    {
+      "test": "Properties Data Validation",
+      "status": "PASS",
+      "details": "Found 9 properties",
+      "timestamp": "2026-04-11T09:48:54.264461"
+    },
+    {
+      "test": "Get Property prop-1",
+      "status": "PASS",
+      "details": "Status: 200, Response: dict",
+      "timestamp": "2026-04-11T09:48:54.368452"
+    },
+    {
+      "test": "Search Properties by Location",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 1 items",
+      "timestamp": "2026-04-11T09:48:54.471843"
+    },
+    {
+      "test": "Search Properties by Type",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 4 items",
+      "timestamp": "2026-04-11T09:48:54.712166"
+    },
+    {
+      "test": "Search Properties (Empty)",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 9 items",
+      "timestamp": "2026-04-11T09:48:54.812410"
+    },
+    {
+      "test": "Get All Projects",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 3 items",
+      "timestamp": "2026-04-11T09:48:54.952867"
+    },
+    {
+      "test": "Projects Data Validation",
+      "status": "PASS",
+      "details": "Found 3 projects",
+      "timestamp": "2026-04-11T09:48:54.953511"
+    },
+    {
+      "test": "Get All Testimonials",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 3 items",
+      "timestamp": "2026-04-11T09:48:55.060807"
+    },
+    {
+      "test": "Testimonials Data Validation",
+      "status": "PASS",
+      "details": "Found 3 testimonials",
+      "timestamp": "2026-04-11T09:48:55.061447"
+    },
+    {
+      "test": "Submit Lead",
+      "status": "PASS",
+      "details": "Status: 200, Response: dict - Interested in properties in Sector 54",
+      "timestamp": "2026-04-11T09:48:55.171288"
+    },
+    {
+      "test": "Get All Leads",
+      "status": "PASS",
+      "details": "Status: 200, Response: list with 1 items",
+      "timestamp": "2026-04-11T09:48:55.273065"
+    }
+  ]
+}

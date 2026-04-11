@@ -42,11 +42,11 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center bg-black px-3 py-2 rounded-lg">
             <img
-              src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/njhhudzn_WhatsApp%20Image%202026-04-11%20at%203.05.47%20PM.jpeg"
+              src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/puln9hgq_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
               alt="Housing Capital Logo"
-              className="h-20 md:h-24 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </div>
 

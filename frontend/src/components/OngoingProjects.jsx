@@ -1,15 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { MapPin, Building2, ArrowRight } from 'lucide-react';
-import { ongoingProjects } from '../data/mock';
+import { getProjects } from '../api/api';
 
 export const OngoingProjects = () => {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const data = await getProjects();
+        setProjects(data);
+      } catch (err) {
+        console.error('Error loading projects:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   const handleLearnMore = (project) => {
     console.log('Learn more about:', project.name);
     alert(`${project.name}\n${project.location}\n\n${project.description}\n\nUnits: ${project.units}\nStatus: ${project.status}`);
   };
+
+  if (loading) {
+    return (
+      <section id="projects" className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <div className="animate-pulse">
+              <div className="h-12 bg-slate-300 rounded w-96 mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="projects" className="py-20 bg-slate-50">
@@ -26,7 +58,7 @@ export const OngoingProjects = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {ongoingProjects.map((project) => (
+          {projects.map((project) => (
             <Card
               key={project.id}
               className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-slate-200"
