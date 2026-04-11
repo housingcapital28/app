@@ -89,6 +89,21 @@ properties_seed = [
         "description": "Elegant 4BHK builder floor with modern design in Sector 23",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-dlf4",
+        "title": "Luxury 4BHK Builder Floor - DLF Phase 4",
+        "price": "Price on Request",
+        "location": "DLF Phase 4, Gurugram",
+        "sector": "DLF Phase 4",
+        "size": "400 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/ztfrga6c_WhatsApp%20Image%202026-04-11%20at%206.03.57%20PM.jpeg",
+        "description": "Premium 4BHK builder floor in prestigious DLF Phase 4 with excellent amenities",
+        "status": "available",
+        "featured": True
     }
 ]
 
