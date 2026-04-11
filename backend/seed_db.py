@@ -134,6 +134,21 @@ properties_seed = [
         "description": "Luxurious 4BHK builder floor with premium wooden cladding and modern design in DLF Phase 1",
         "status": "available",
         "featured": True
+    },
+    {
+        "id": "prop-dlf2-2",
+        "title": "Contemporary 4BHK Builder Floor - DLF Phase 2",
+        "price": "Price on Request",
+        "location": "DLF Phase 2, Gurugram",
+        "sector": "DLF Phase 2",
+        "size": "300 sq yds",
+        "type": "Builder Floor",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/1jehpiso_WhatsApp%20Image%202026-04-11%20at%205.59.00%20PM.jpeg",
+        "description": "Modern 4BHK builder floor with contemporary design and lattice features in DLF Phase 2",
+        "status": "available",
+        "featured": True
     }
 ]
 
