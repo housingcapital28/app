@@ -31,21 +31,6 @@ properties_seed = [
         "featured": True
     },
     {
-        "id": "prop-1",
-        "title": "Luxury 4BHK Builder Floor",
-        "price": "₹2.5 Cr",
-        "location": "Sector 57, Gurugram",
-        "sector": "Sector 57",
-        "size": "2400 sqft",
-        "type": "Builder Floor",
-        "bedrooms": 4,
-        "bathrooms": 4,
-        "image": "https://images.unsplash.com/photo-1680919838857-d54e011093d3",
-        "description": "Premium 4BHK builder floor in the heart of Sector 57 with modern amenities",
-        "status": "available",
-        "featured": True
-    },
-    {
         "id": "prop-2",
         "title": "Modern 3BHK Apartment",
         "price": "₹1.8 Cr",
