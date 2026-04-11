@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer id="contact" className="bg-slate-900 text-slate-300">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Housing Capital</h3>
@@ -145,6 +145,15 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Logo Column - Right Side */}
+          <div className="flex items-center justify-center lg:justify-end">
+            <img
+              src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/qmee7kc2_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
+              alt="Housing Capital Logo"
+              className="h-40 md:h-48 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
           </div>
         </div>
       </div>
