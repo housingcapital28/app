@@ -57,7 +57,7 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Buy. Sell. Invest.
@@ -143,7 +143,7 @@ export const HeroSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <a href="#contact">
               <Button
                 size="lg"
