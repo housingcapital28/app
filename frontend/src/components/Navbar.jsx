@@ -36,7 +36,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-1' : 'bg-white/95 backdrop-blur-sm py-2'
+        isScrolled ? 'bg-white shadow-md py-0.5' : 'bg-white/95 backdrop-blur-sm py-1'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -46,7 +46,7 @@ export const Navbar = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/qmee7kc2_ChatGPT%20Image%20Apr%2011%2C%202026%2C%2003_26_00%20PM.png"
               alt="Housing Capital Logo"
-              className="h-28 md:h-36 lg:h-40 w-auto object-contain"
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain"
             />
           </div>
 
