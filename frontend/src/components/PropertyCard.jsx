@@ -3,11 +3,13 @@ import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { MapPin, Maximize, Bed, Bath } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const PropertyCard = ({ property }) => {
+  const navigate = useNavigate();
+
   const handleViewDetails = () => {
-    console.log('Viewing property:', property.id);
-    alert(`Property Details:\n${property.type} in ${property.location}\nPrice: ${property.price}\nSize: ${property.size}`);
+    navigate(`/property/${property.id}`);
   };
 
   return (
