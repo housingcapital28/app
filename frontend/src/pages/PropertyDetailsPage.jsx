@@ -13,7 +13,9 @@ import {
   Phone, 
   MessageCircle,
   Home,
-  CheckCircle
+  CheckCircle,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { getProperty } from '../api/api';
 import { Navbar } from '../components/Navbar';
@@ -24,6 +26,7 @@ export const PropertyDetailsPage = () => {
   const navigate = useNavigate();
   const [property, setProperty] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   useEffect(() => {
     const fetchProperty = async () => {
@@ -71,36 +74,104 @@ export const PropertyDetailsPage = () => {
   const whatsappMessage = `Hello Housing Capital, I'm interested in the ${property.type} at ${property.location}. Please provide more details.`;
   const whatsappUrl = `https://wa.me/918742932997?text=${encodeURIComponent(whatsappMessage)}`;
 
+  // Combine main image with gallery images
+  const allImages = property.images && property.images.length > 0 
+    ? [property.image, ...property.images] 
+    : [property.image];
+
+  const handlePrevImage = () => {
+    setSelectedImageIndex((prev) => (prev === 0 ? allImages.length - 1 : prev - 1));
+  };
+
+  const handleNextImage = () => {
+    setSelectedImageIndex((prev) => (prev === allImages.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <div className="min-h-screen bg-slate-50">
       <Navbar />
       
-      {/* Hero Image Section */}
-      <section className="relative h-96 md:h-[500px] mt-24">
-        <img
-          src={property.image}
-          alt={property.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-        
-        {/* Property Type Badge */}
-        <div className="absolute top-6 left-6">
-          <Badge className="bg-amber-600 text-white px-4 py-2 text-lg">
-            {property.type}
-          </Badge>
+      {/* Hero Image Gallery Section */}
+      <section className="relative mt-24">
+        {/* Main Image */}
+        <div className="relative h-96 md:h-[500px]">
+          <img
+            src={allImages[selectedImageIndex]}
+            alt={`${property.title} - Image ${selectedImageIndex + 1}`}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+          
+          {/* Property Type Badge */}
+          <div className="absolute top-6 left-6">
+            <Badge className="bg-amber-600 text-white px-4 py-2 text-lg">
+              {property.type}
+            </Badge>
+          </div>
+
+          {/* Back Button */}
+          <div className="absolute top-6 right-6">
+            <Button
+              onClick={() => navigate('/')}
+              className="bg-white text-slate-900 hover:bg-slate-100"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Listings
+            </Button>
+          </div>
+
+          {/* Navigation Arrows (only show if multiple images) */}
+          {allImages.length > 1 && (
+            <>
+              <button
+                onClick={handlePrevImage}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-200"
+              >
+                <ChevronLeft className="w-6 h-6 text-slate-900" />
+              </button>
+              <button
+                onClick={handleNextImage}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-200"
+              >
+                <ChevronRight className="w-6 h-6 text-slate-900" />
+              </button>
+            </>
+          )}
+
+          {/* Image Counter */}
+          {allImages.length > 1 && (
+            <div className="absolute bottom-6 right-6 bg-slate-900/80 text-white px-4 py-2 rounded-lg">
+              {selectedImageIndex + 1} / {allImages.length}
+            </div>
+          )}
         </div>
 
-        {/* Back Button */}
-        <div className="absolute top-6 right-6">
-          <Button
-            onClick={() => navigate('/')}
-            className="bg-white text-slate-900 hover:bg-slate-100"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Listings
-          </Button>
-        </div>
+        {/* Thumbnail Gallery */}
+        {allImages.length > 1 && (
+          <div className="bg-white border-t border-slate-200 py-4">
+            <div className="container mx-auto px-4">
+              <div className="flex gap-3 overflow-x-auto pb-2">
+                {allImages.map((img, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedImageIndex(index)}
+                    className={`flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                      selectedImageIndex === index 
+                        ? 'border-amber-600 ring-2 ring-amber-600 ring-offset-2' 
+                        : 'border-slate-200 hover:border-amber-400'
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Property Details Section */}

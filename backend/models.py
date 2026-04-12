@@ -15,6 +15,7 @@ class Property(BaseModel):
     bedrooms: Optional[int] = None
     bathrooms: Optional[int] = None
     image: str
+    images: List[str] = []  # Gallery images
     description: Optional[str] = None
     status: str = "available"
     featured: bool = True
@@ -31,6 +32,7 @@ class PropertyCreate(BaseModel):
     bedrooms: Optional[int] = None
     bathrooms: Optional[int] = None
     image: str
+    images: List[str] = []  # Gallery images
     description: Optional[str] = None
     status: str = "available"
     featured: bool = True
