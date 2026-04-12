@@ -28,7 +28,17 @@ properties_seed = [
         "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/5ja2obca_IMG_7953.jpg",
         "description": "Beautiful 4BHK builder floor in Sushant Lok C Block with excellent location",
         "status": "available",
-        "featured": True
+        "featured": True,
+        "images": [
+            "/images/properties/prop-sushant/gallery-1.jpg",
+            "/images/properties/prop-sushant/gallery-2.jpg",
+            "/images/properties/prop-sushant/gallery-3.jpg",
+            "/images/properties/prop-sushant/gallery-4.jpg",
+            "/images/properties/prop-sushant/gallery-5.jpg",
+            "/images/properties/prop-sushant/gallery-6.jpg",
+            "/images/properties/prop-sushant/gallery-7.jpg",
+            "/images/properties/prop-sushant/gallery-8.jpg"
+        ]
     },
     {
         "id": "prop-malibu",
