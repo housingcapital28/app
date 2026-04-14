@@ -53,7 +53,13 @@ properties_seed = [
         "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/xzokp3f5_WhatsApp%20Image%202026-04-11%20at%205.55.19%20PM.jpeg",
         "description": "Prime corner 4BHK builder floor in Malibu Town with excellent construction",
         "status": "available",
-        "featured": True
+        "featured": True,
+        "images": [
+            "/images/properties/prop-malibu/gallery-1.jpg",
+            "/images/properties/prop-malibu/gallery-2.jpg",
+            "/images/properties/prop-malibu/gallery-3.jpg",
+            "/images/properties/prop-malibu/gallery-4.jpg"
+        ]
     },
     {
         "id": "prop-sushant-c2",
