@@ -68,7 +68,14 @@ properties_seed = [
         "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/3gjhkxd0_WhatsApp%20Image%202026-04-11%20at%205.57.37%20PM.jpeg",
         "description": "Spacious 4BHK builder floor in Sushant Lok C2 Block with modern amenities",
         "status": "available",
-        "featured": True
+        "featured": True,
+        "images": [
+            "/images/properties/prop-sushant-c2/gallery-1.jpg",
+            "/images/properties/prop-sushant-c2/gallery-2.jpg",
+            "/images/properties/prop-sushant-c2/gallery-3.jpg",
+            "/images/properties/prop-sushant-c2/gallery-4.jpg",
+            "/images/properties/prop-sushant-c2/gallery-5.jpg"
+        ]
     },
     {
         "id": "prop-sec23",
