@@ -192,7 +192,13 @@ properties_seed = [
         "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/5ki9zmha_WhatsApp%20Image%202026-04-11%20at%205.58.19%20PM.jpeg",
         "description": "Premium 4BHK builder floor with wooden louver facade and stone cladding in DLF Phase 2, Sector 27",
         "status": "available",
-        "featured": True
+        "featured": True,
+        "images": [
+            "/images/properties/prop-dlf2-sec27/gallery-1.jpg",
+            "/images/properties/prop-dlf2-sec27/gallery-2.jpg",
+            "/images/properties/prop-dlf2-sec27/gallery-3.jpg",
+            "/images/properties/prop-dlf2-sec27/gallery-4.jpg"
+        ]
     }
 ]
 
