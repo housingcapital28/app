@@ -132,7 +132,14 @@ properties_seed = [
         "image": "https://customer-assets.emergentagent.com/job_gurugram-luxury/artifacts/ztfrga6c_WhatsApp%20Image%202026-04-11%20at%206.03.57%20PM.jpeg",
         "description": "Premium 4BHK builder floor in prestigious DLF Phase 4 with excellent amenities",
         "status": "available",
-        "featured": True
+        "featured": True,
+        "images": [
+            "/images/properties/prop-dlf4/gallery-1.jpg",
+            "/images/properties/prop-dlf4/gallery-2.jpg",
+            "/images/properties/prop-dlf4/gallery-3.jpg",
+            "/images/properties/prop-dlf4/gallery-4.jpg",
+            "/images/properties/prop-dlf4/gallery-5.jpg"
+        ]
     },
     {
         "id": "prop-dlf2",
