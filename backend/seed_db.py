@@ -197,7 +197,9 @@ properties_seed = [
             "/images/properties/prop-dlf2-2/gallery-7.jpg",
             "/images/properties/prop-dlf2-2/gallery-8.jpg",
             "/images/properties/prop-dlf2-2/gallery-9.jpg",
-            "/images/properties/prop-dlf2-2/gallery-10.jpg"
+            "/images/properties/prop-dlf2-2/gallery-10.jpg",
+            "/images/properties/prop-dlf2-2/gallery-11.jpg",
+            "/images/properties/prop-dlf2-2/gallery-12.jpg"
         ]
     },
     {
