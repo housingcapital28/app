@@ -138,7 +138,12 @@ properties_seed = [
             "/images/properties/prop-dlf4/gallery-2.jpg",
             "/images/properties/prop-dlf4/gallery-3.jpg",
             "/images/properties/prop-dlf4/gallery-4.jpg",
-            "/images/properties/prop-dlf4/gallery-5.jpg"
+            "/images/properties/prop-dlf4/gallery-5.jpg",
+            "/images/properties/prop-dlf4/gallery-6.jpg",
+            "/images/properties/prop-dlf4/gallery-7.jpg",
+            "/images/properties/prop-dlf4/gallery-8.jpg",
+            "/images/properties/prop-dlf4/gallery-9.jpg",
+            "/images/properties/prop-dlf4/gallery-10.jpg"
         ]
     },
     {
